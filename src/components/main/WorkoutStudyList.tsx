@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
-import PopularStudyListItem from './PopularStudyListItem';
+import PopularStudyListItem from './WorkoutStudyListItem';
 
 const data = [
   {title: '겁나 나는 오늘을 위해 태어난겨', numOfMembers: 35},

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import ContentTitle from './ContentTitle';
-import PopularStudyList from './PopularStudyList';
+import PopularStudyList from './WorkoutStudyList';
 
 function WorkoutStudyContainer() {
   return (
