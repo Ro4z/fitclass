@@ -5,9 +5,8 @@ platform :ios, '10.0'
 
 target 'FitClass' do
   config = use_native_modules!
-
   use_react_native!(:path => config["reactNativePath"])
-
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   target 'FitClassTests' do
     inherit! :complete
     # Pods for testing
