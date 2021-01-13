@@ -15,9 +15,11 @@ function PopularStudyList() {
       <View style={styles.flatListView}>
         <FlatList
           data={[...data, ...data, ...data]}
+          showsVerticalScrollIndicator={false}
           renderItem={({item, index}) => (
             <PopularStudyListItem data={item} index={index} />
           )}
+          keyExtractor={(_, index) => `WorkoutStudyListItem_${index}`}
           ItemSeparatorComponent={() => <View style={styles.separator} />}
         />
       </View>
@@ -30,7 +32,6 @@ export default PopularStudyList;
 const styles = StyleSheet.create({
   main: {
     marginTop: 5,
-    marginBottom: 30,
     height: 200,
   },
   title: {

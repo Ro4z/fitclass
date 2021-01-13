@@ -15,5 +15,8 @@ function WorkoutStudyContainer() {
 export default WorkoutStudyContainer;
 
 const styles = StyleSheet.create({
-  mainContainer: {},
+  mainContainer: {
+    height: 250,
+    marginBottom: 30,
+  },
 });
