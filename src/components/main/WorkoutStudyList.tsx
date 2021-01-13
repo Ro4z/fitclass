@@ -11,7 +11,7 @@ const data = [
 function PopularStudyList() {
   return (
     <View style={styles.main}>
-      <Text style={styles.title}>인기 독서실</Text>
+      <Text style={styles.title}>인기 모임</Text>
       <View style={styles.flatListView}>
         <FlatList
           data={[...data, ...data, ...data]}
