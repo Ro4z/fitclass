@@ -6,14 +6,14 @@ type ContentTitleProps = {
   subTitle: string;
 };
 
-const ContentTitle = ({title = '', subTitle = ''}: ContentTitleProps) => {
+function ContentTitle({title = '', subTitle = ''}: ContentTitleProps) {
   return (
     <>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subTitle}>{subTitle}</Text>
     </>
   );
-};
+}
 
 export default ContentTitle;
 
