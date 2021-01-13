@@ -13,7 +13,6 @@ const defaultOptions: StackNavigationOptions = {
   title: 'FITCLASS',
   headerStyle: {
     backgroundColor: 'rgb(50,50,50)',
-    borderColor: 'red',
     shadowColor: 'transparent',
   },
   headerTintColor: '#fff',
@@ -24,6 +23,8 @@ const defaultOptions: StackNavigationOptions = {
   },
   cardStyle: {
     backgroundColor: BACKGROUND,
+    paddingVertical: 20,
+    paddingHorizontal: 15,
   },
 };
 
