@@ -15,6 +15,7 @@ function PTClassContainer() {
 const styles = StyleSheet.create({
   mainContainer: {
     marginTop: 30,
+    height: 400,
   },
 });
 

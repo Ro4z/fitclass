@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import HeartIcon from 'react-native-vector-icons/Entypo';
 import SmileIcon from 'react-native-vector-icons/Feather';
+HeartIcon.loadFont();
 SmileIcon.loadFont();
 
 import truncateString from '@utils/truncateString';

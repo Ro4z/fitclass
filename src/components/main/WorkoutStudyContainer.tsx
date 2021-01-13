@@ -6,7 +6,7 @@ import PopularStudyList from './WorkoutStudyList';
 function WorkoutStudyContainer() {
   return (
     <View style={styles.mainContainer}>
-      <ContentTitle title="ZOOM 독서실" subTitle="우리 같이 운동합시다" />
+      <ContentTitle title="Home Fitness" subTitle="우리 같이 운동합시다" />
       <PopularStudyList />
     </View>
   );

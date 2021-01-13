@@ -3,28 +3,18 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import MainScreen from '@screens/MainScreen';
 import {NavigationContainer} from '@react-navigation/native';
+
+import MainScreen from '@screens/MainScreen';
 import {BACKGROUND} from '@styles/color';
+import {WIDTH} from '@constants/dimensions';
 
 const Stack = createStackNavigator();
 
 const defaultOptions: StackNavigationOptions = {
-  title: 'FITCLASS',
-  headerStyle: {
-    backgroundColor: 'rgb(50,50,50)',
-    shadowColor: 'transparent',
-  },
-  headerTintColor: '#fff',
-  headerTitleStyle: {
-    fontWeight: 'bold',
-    fontFamily: 'OpenSauceSans-Bold',
-    fontSize: 18,
-  },
+  headerShown: false,
   cardStyle: {
     backgroundColor: BACKGROUND,
-    paddingVertical: 20,
-    paddingHorizontal: 15,
   },
 };
 
