@@ -1,14 +1,22 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 const MainScreen = () => {
   return (
-    <View>
+    <SafeAreaView style={styles.mainContainer}>
       <Text>asdf</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
 export default MainScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    shadowOffset: {
+      width: 300,
+      height: 100,
+    },
+  },
+});
