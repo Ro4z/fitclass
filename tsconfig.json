@@ -4,7 +4,6 @@
     "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
     // Base directory to resolve non-absolute module names.
     "paths": {
-      "~/*": ["./*"],
       "@api/*": ["api/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
