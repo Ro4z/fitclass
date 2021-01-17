@@ -4,7 +4,7 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import ContentTitle from './ContentTitle';
 import PopularStudyList from './WorkoutStudyList';
 
-function WorkoutStudyContainer({navigation}) {
+function WorkoutStudyContainer({navigation}: {navigation?: any}) {
   return (
     <View style={styles.mainContainer}>
       <TouchableOpacity onPress={() => navigation.navigate('WorkoutStudy')}>
