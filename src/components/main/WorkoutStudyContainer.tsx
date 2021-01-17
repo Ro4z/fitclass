@@ -7,7 +7,8 @@ import PopularStudyList from './WorkoutStudyList';
 function WorkoutStudyContainer({navigation}: {navigation?: any}) {
   return (
     <View style={styles.mainContainer}>
-      <TouchableOpacity onPress={() => navigation.navigate('WorkoutStudy')}>
+      <TouchableOpacity
+        onPress={navigation && (() => navigation.navigate('WorkoutStudy'))}>
         <ContentTitle title="Home Fitness" subTitle="우리 같이 운동합시다" />
       </TouchableOpacity>
       <PopularStudyList />
