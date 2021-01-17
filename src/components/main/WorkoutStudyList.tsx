@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
-import PopularStudyListItem from './WorkoutStudyListItem';
+import WorkoutStudyListItem from './WorkoutStudyListItem';
 
 const data = [
   {title: '겁나 나는 오늘을 위해 태어난겨', numOfMembers: 35},
@@ -8,7 +8,7 @@ const data = [
   {title: '이 중량에 잠이 오냐', numOfMembers: 28},
 ];
 
-function PopularStudyList() {
+function WorkoutStudyList() {
   return (
     <View style={styles.main}>
       <Text style={styles.title}>인기 모임</Text>
@@ -17,7 +17,7 @@ function PopularStudyList() {
           data={[...data, ...data, ...data]}
           showsVerticalScrollIndicator={false}
           renderItem={({item, index}) => (
-            <PopularStudyListItem data={item} index={index} />
+            <WorkoutStudyListItem data={item} index={index} />
           )}
           keyExtractor={(_, index) => `WorkoutStudyListItem_${index}`}
           ItemSeparatorComponent={() => <View style={styles.separator} />}
@@ -27,7 +27,7 @@ function PopularStudyList() {
   );
 }
 
-export default PopularStudyList;
+export default WorkoutStudyList;
 
 const styles = StyleSheet.create({
   main: {

@@ -10,7 +10,7 @@ const getColorUsingIndex = (index: number) => {
   return colors[index % colors.length];
 };
 
-type PopularStudyListItemProps = {
+type WorkoutStudyListItemProps = {
   data: {
     title: string;
     numOfMembers: number;
@@ -18,10 +18,10 @@ type PopularStudyListItemProps = {
   index: number;
 };
 
-function PopularStudyListItem({
+function WorkoutStudyListItem({
   data: {title = '', numOfMembers = 0},
   index = 0,
-}: PopularStudyListItemProps) {
+}: WorkoutStudyListItemProps) {
   return (
     <View style={[styles.item, {backgroundColor: getColorUsingIndex(index)}]}>
       <Text style={styles.title}>{title}</Text>
@@ -33,7 +33,7 @@ function PopularStudyListItem({
   );
 }
 
-export default PopularStudyListItem;
+export default WorkoutStudyListItem;
 
 const styles = StyleSheet.create({
   item: {
