@@ -20,7 +20,7 @@ export default PopularStudyContainer;
 
 const styles = StyleSheet.create({
   mainContainer: {
-    height: 330,
+    height: 420,
     marginBottom: 30,
   },
 });

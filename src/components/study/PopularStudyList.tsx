@@ -28,8 +28,8 @@ export default PopularStudyList;
 
 const styles = StyleSheet.create({
   main: {
-    marginTop: 5,
-    height: 280,
+    marginTop: 15,
+    height: 380,
   },
   separator: {
     height: 10,
