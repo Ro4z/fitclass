@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   datetext: {
     color: '#ffffff',
     fontSize: 15,
-    fontFamily: 'OpenSauceSans',
+    fontFamily: 'OpenSauceSans-Medium',
     marginBottom: 2,
   },
   attendday: {
