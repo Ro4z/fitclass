@@ -1,19 +1,21 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {StackNavigationProp} from '@react-navigation/stack';
 
 import WorkoutStudyContainer from '@components/main/WorkoutStudyContainer';
 import BannerImage from '@components/main/BannerImage';
 import PTClassContainer from '@components/main/PTClassContainer';
 import Header from '@components/structure/Header';
 import {BACKGROUND} from '@styles/color';
+import {RouteProp} from '@react-navigation/native';
 
-function MainScreen() {
+function MainScreen({navigation}) {
   return (
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
       <Header title="FITCLASS" />
 
       <ScrollView style={styles.mainContainer}>
-        <WorkoutStudyContainer />
+        <WorkoutStudyContainer navigation={navigation} />
         <BannerImage />
         <PTClassContainer />
       </ScrollView>

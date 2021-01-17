@@ -1,12 +1,15 @@
+import {RouteProp} from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import ContentTitle from './ContentTitle';
 import PopularStudyList from './WorkoutStudyList';
 
-function WorkoutStudyContainer() {
+function WorkoutStudyContainer({navigation}) {
   return (
     <View style={styles.mainContainer}>
-      <ContentTitle title="Home Fitness" subTitle="우리 같이 운동합시다" />
+      <TouchableOpacity onPress={() => navigation.navigate('WorkoutStudy')}>
+        <ContentTitle title="Home Fitness" subTitle="우리 같이 운동합시다" />
+      </TouchableOpacity>
       <PopularStudyList />
     </View>
   );
