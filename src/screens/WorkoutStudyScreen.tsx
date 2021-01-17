@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 import {BACKGROUND} from '@styles/color';
 import Header from '@components/structure/Header';
@@ -10,10 +10,10 @@ function WorkoutStudyScreen() {
   return (
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
       <Header title="FITCLASS" />
-      <View style={styles.mainContainer}>
+      <ScrollView style={styles.mainContainer}>
         <PopularStudyContainer />
         <WorkoutStudyContainer />
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
