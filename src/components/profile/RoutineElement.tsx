@@ -37,6 +37,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#fff',
     marginLeft: 5,
-    fontFamily: 'OpenSauceSans',
+    fontFamily: 'OpenSauceSans-Medium',
   },
 });
