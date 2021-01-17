@@ -25,9 +25,10 @@ function ProfileContents() {
         }}>
         <Image
           style={styles.profileimage}
-          source={require('@assets/image/main_banner.jpg')}
+          resizeMode="stretch"
+          source={require('@assets/image/profile_sample.jpg')}
         />
-        <Text style={styles.username}>Jill</Text>
+        <Text style={styles.username}>Dolly</Text>
         <Text style={styles.datetext}>시작일 2021-01-15</Text>
         <View style={{flexDirection: 'row'}}>
           <Text style={styles.howlong}>{continousAttention}</Text>

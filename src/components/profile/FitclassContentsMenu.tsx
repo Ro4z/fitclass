@@ -7,7 +7,7 @@ function FitclassContentsMenu() {
     <View style={{flexDirection: 'row'}}>
       <ImageBackground
         style={styles.backgroundimage2}
-        source={require('@assets/image/profile_background.jpg')}
+        source={require('@assets/image/pt_service_thumbnail.jpg')}
         resizeMode="cover">
         <View style={styles.backgroundcover}>
           <Text style={[styles.subtitle, {textAlign: 'right', marginRight: 5}]}>
@@ -21,7 +21,7 @@ function FitclassContentsMenu() {
       </ImageBackground>
       <ImageBackground
         style={styles.backgroundimage2}
-        source={require('@assets/image/profile_background.jpg')}
+        source={require('@assets/image/posture_service_thumbnail.png')}
         resizeMode="cover">
         <View style={styles.backgroundcover}>
           <Text style={[styles.subtitle, {textAlign: 'right', marginRight: 5}]}>
