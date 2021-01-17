@@ -5,9 +5,10 @@ import {
 } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
-import MainScreen from '@screens/MainScreen';
 import {BACKGROUND} from '@styles/color';
-import {WIDTH} from '@constants/dimensions';
+import ProfileScreen from '@screens/ProfileScreen';
+import MainScreen from '@screens/MainScreen';
+import WorkoutStudyScreen from '@screens/WorkoutStudyScreen';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,16 @@ function DefaultNavigationContainer() {
         <Stack.Screen
           name="Main"
           component={MainScreen}
+          options={defaultOptions}
+        />
+        <Stack.Screen
+          name="Profile"
+          component={ProfileScreen}
+          options={defaultOptions}
+        />
+        <Stack.Screen
+          name="WorkoutStudy"
+          component={WorkoutStudyScreen}
           options={defaultOptions}
         />
       </Stack.Navigator>
