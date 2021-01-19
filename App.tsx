@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import DefaultNavigationContainer from '@navigation/index';
+import {StyleSheet} from 'react-native';
+import DrawerNavigationContainer from '@navigation/drawernav';
 
 const App = () => {
   return (
     <>
-      <DefaultNavigationContainer />
+      <DrawerNavigationContainer />
     </>
   );
 };
