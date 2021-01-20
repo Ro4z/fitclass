@@ -6,10 +6,10 @@ import Header from '@components/structure/Header';
 import WorkoutStudyContainer from '@components/main/WorkoutStudyContainer';
 import PopularStudyContainer from '@components/study/PopularStudyContainer';
 
-function WorkoutStudyScreen() {
+function WorkoutStudyScreen({navigation}: {navigation?: any}) {
   return (
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
-      <Header title="FITCLASS" />
+      <Header title="FITCLASS" navigation={navigation} />
       <ScrollView style={styles.mainContainer}>
         <PopularStudyContainer />
         <WorkoutStudyContainer />

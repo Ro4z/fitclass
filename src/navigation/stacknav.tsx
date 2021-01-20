@@ -20,33 +20,38 @@ const defaultOptions: StackNavigationOptions = {
 };
 type NavigationProps = {
   defaultscreen: string;
+  navigation?: any;
 };
 
-function DefaultNavigationContainer({defaultscreen = ''}: NavigationProps) {
+function DefaultNavigationContainer({
+  defaultscreen = '',
+  navigation,
+}: NavigationProps) {
   return (
     <Stack.Navigator initialRouteName={defaultscreen}>
       <Stack.Screen
         name="Main"
-        component={MainScreen}
+        component={({navigation}) => <MainScreen navigation={navigation} />}
         options={defaultOptions}
       />
       <Stack.Screen
         name="Profile"
-        component={ProfileScreen}
+        component={({navigation}) => <ProfileScreen navigation={navigation} />}
         options={defaultOptions}
       />
       <Stack.Screen
         name="WorkoutStudy"
-        component={WorkoutStudyScreen}
+        component={({navigation}) => (
+          <WorkoutStudyScreen navigation={navigation} />
+        )}
         options={defaultOptions}
       />
       <Stack.Screen
         name="MyClass"
-        component={MyClassScreen}
+        component={({navigation}) => <MyClassScreen navigation={navigation} />}
         options={defaultOptions}
       />
     </Stack.Navigator>
   );
 }
-
 export default DefaultNavigationContainer;
