@@ -6,10 +6,10 @@ import MyClass from '@components/myclass/MyClass';
 import Recommand from '@components/myclass/Recommand';
 import TopClass from '@components/myclass/TopCalss';
 
-function MyClassScreen() {
+function MyClassScreen({navigation}: {navigation?: any}) {
   return (
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
-      <Header title="FITCLASS" />
+      <Header title="FITCLASS" navigation={navigation} />
       <ScrollView style={styles.mainContainer}>
         <MyClass />
         <Recommand />

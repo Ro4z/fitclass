@@ -9,11 +9,10 @@ import Header from '@components/structure/Header';
 import {BACKGROUND} from '@styles/color';
 import {RouteProp} from '@react-navigation/native';
 
-function MainScreen({navigation}) {
+function MainScreen({navigation}: {navigation?: any}) {
   return (
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
-      <Header title="FITCLASS" />
-
+      <Header title="FITCLASS" navigation={navigation} />
       <ScrollView style={styles.mainContainer}>
         <WorkoutStudyContainer navigation={navigation} />
         <BannerImage />
