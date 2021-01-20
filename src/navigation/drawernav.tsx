@@ -6,6 +6,11 @@ import {
 } from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 import DefaultNavigationContainer from '@navigation/stacknav';
+import PeopleIcon from 'react-native-vector-icons/Ionicons';
+import ProfileIcon from 'react-native-vector-icons/AntDesign';
+
+PeopleIcon.loadFont();
+ProfileIcon.loadFont();
 
 const Drawer = createDrawerNavigator();
 
@@ -34,9 +39,10 @@ function DrawerNavigationContainer() {
           options={{
             title: 'Main',
             drawerIcon: ({focused}) => (
-              <Image
-                source={require('@assets/image/profile_sample.jpg')}
+              <PeopleIcon
+                name="home"
                 style={[focused ? styles.profileimage : styles.profileimage2]}
+                size={30}
               />
             ),
           }}
@@ -52,9 +58,10 @@ function DrawerNavigationContainer() {
           options={{
             title: 'Profile',
             drawerIcon: ({focused}) => (
-              <Image
-                source={require('@assets/image/profile_sample.jpg')}
+              <ProfileIcon
+                name="profile"
                 style={[focused ? styles.profileimage : styles.profileimage2]}
+                size={30}
               />
             ),
           }}
@@ -70,9 +77,10 @@ function DrawerNavigationContainer() {
           options={{
             title: 'WorkoutStudy',
             drawerIcon: ({focused}) => (
-              <Image
-                source={require('@assets/image/profile_sample.jpg')}
+              <PeopleIcon
+                name="people"
                 style={[focused ? styles.profileimage : styles.profileimage2]}
+                size={30}
               />
             ),
           }}
@@ -88,9 +96,10 @@ function DrawerNavigationContainer() {
           options={{
             title: 'MyClass',
             drawerIcon: ({focused}) => (
-              <Image
-                source={require('@assets/image/profile_sample.jpg')}
+              <PeopleIcon
+                name="person"
                 style={[focused ? styles.profileimage : styles.profileimage2]}
+                size={30}
               />
             ),
           }}
@@ -107,18 +116,16 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     marginLeft: 5,
-    paddingHorizontal: 10,
-    borderRadius: 100,
+    paddingHorizontal: 5,
     marginTop: 10,
-    marginBottom: 5,
+    color: '#fff',
   },
   profileimage2: {
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 40,
     marginLeft: 5,
-    paddingHorizontal: 10,
-    borderRadius: 100,
+    paddingHorizontal: 5,
     marginTop: 10,
-    marginBottom: 5,
+    color: '#fff',
   },
 });
