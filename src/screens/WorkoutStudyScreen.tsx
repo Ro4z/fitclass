@@ -11,7 +11,7 @@ function WorkoutStudyScreen({navigation}: {navigation?: any}) {
     <SafeAreaView style={{backgroundColor: 'rgb(50,50,50)'}}>
       <Header title="FITCLASS" navigation={navigation} />
       <ScrollView style={styles.mainContainer}>
-        <PopularStudyContainer />
+        <PopularStudyContainer navigation={navigation} />
         <WorkoutStudyContainer />
       </ScrollView>
     </SafeAreaView>
